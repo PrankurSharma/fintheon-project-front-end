@@ -90,8 +90,12 @@ function App() {
         <h2> Search AQI Of a City </h2>
         <input value={city} placeholder='Enter Name of the City' onChange={(e) => {
           set_city(e.target.value);
-        }} />
-        <button onClick={fetchData}> Submit </button>
+        }} 
+        onKeyUp={(event) => {
+          event.key ==='Enter' && fetchData();
+        }}
+        />
+        <button onClick={fetchData}> Search </button>
       </div>
       <div>
         {click && <h1> Results </h1>}
