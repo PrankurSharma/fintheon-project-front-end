@@ -1,0 +1,198 @@
+.App {
+  text-align: center;
+  justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+h1 {
+  color: darkblue;
+} 
+
+h2 {
+  color: blueviolet;
+}
+
+body {
+  background-image: url('../public/aqiback.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.form {
+  border: 2px solid black;
+  padding: 20px;
+  width: 20%;
+  margin-left: 40%;
+}
+
+.form input {
+  width: 90%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.form button {
+  width: 90%;
+  border-radius: 10px;
+  background-color: blue;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+}
+
+.city {
+  border: 2px solid black;
+  margin-top: 20px;
+  width: 49%;
+  height: fit-content;
+  margin-left: 10%;
+  margin-right: 20px;
+}
+
+.citdet {
+  color: indigo;
+}
+
+.aqidet {
+  color: whitesmoke;
+}
+
+.good, .mod, .uns, .un, .vun, .haz {
+  border: 2px dotted black;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.good {
+  background-color: green;
+}
+
+.mod {
+  background-color: yellow;
+}
+
+.uns {
+  background-color: orange;
+}
+
+.un {
+  background-color: red;
+}
+
+.vun {
+  background-color: purple;
+}
+
+.haz {
+  background-color: maroon;
+}
+
+.weather {
+  border: 2px solid black;
+  height: fit-content;
+  margin-top: 20px;
+  width: 30%;
+}
+
+.weather h3 {
+  color: brown;
+}
+
+.polgra {
+  display: flex;
+  width: 98%;
+  margin-left: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.polls {
+  width: 1500px;
+  background-color: aqua;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.temps {
+  display: flex;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.entries {
+  margin-right: 10px;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+@media screen and ((min-width: 700px) and (max-width: 1200px)) {
+  .city {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .weather {
+    width: 20%;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    width: 50%;
+    margin-left: 20%;
+  }
+
+  .form input, .form button {
+    font-size: 15px;
+  }
+
+  .city {
+    width: 95%;
+    margin-left: 0;
+  }
+
+  .city h3 {
+    font-size: 15px;
+  }
+
+  .weather {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .polls {
+    width: 700px;
+  }
+}
