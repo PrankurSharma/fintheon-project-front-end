@@ -1,0 +1,1 @@
+export const backendUrl = "https://fintheon-project-back-end.onrender.com";

@@ -6,6 +6,7 @@ import './App.css';
 import ImplementCharts from './ImplementCharts';
 import CityInfo from './CityInfo';
 import WeatherInfo from './WeatherInfo';
+import { backendUrl } from './backendUrl';
 
 function App() {
   const [filled, set_filled] = useState(false);
@@ -18,7 +19,7 @@ function App() {
 
   function fetchData() {
     const url = baseUrl + city + '/?token=' + token;
-    Axios.post('http://localhost:3001/api/fetch', {
+    Axios.post(backendUrl + '/api/fetch', {
       url: url
     }).then((response) => {
       if(response.data.message){
