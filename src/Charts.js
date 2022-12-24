@@ -21,17 +21,20 @@ const Charts = ({ mydata, filled }) => {
         {
           label: "Min",
           data: mins,
-          borderWidth: 0
+          borderWidth: 0,
+          backgroundColor: '#7cfc00'
         },
         {
           label: "Average",
           data: avgs,
-          borderWidth: 0
+          borderWidth: 0,
+          backgroundColor: '#ffff00'
         },
         {
           label: "Max",
           data: maxs,
-          borderWidth: 0
+          borderWidth: 0,
+          backgroundColor: '#ee4b2b'
         }
       ]
     });
